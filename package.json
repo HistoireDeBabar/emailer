@@ -1,0 +1,50 @@
+{
+  "name": "emailer",
+  "version": "1.0.0",
+  "description": "A Simple Emailer that sends emails to a configured endpoint",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "mocha --compilers js:babel-core/register ./test/** --recursive --require babel-polyfill",
+    "test:watch": "mocha --compilers js:babel-core/register ./test/** --recursive --watch --require babel-polyfill",
+    "lint": "gulp lint",
+    "cover": "gulp cover",
+    "build": ". ./scripts/build.sh"
+  },
+  "keywords": [
+    "es6",
+    "aws",
+    "ses",
+    "email"
+  ],
+  "author": "monist",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.11.4",
+    "babel-eslint": "^6.1.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-object-assign": "^1.2.1",
+    "babel-plugin-transform-async-to-generator": "^6.8.0",
+    "babel-plugin-transform-object-assign": "^6.8.0",
+    "babel-polyfill": "^6.9.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "chai": "^3.5.0",
+    "eslint": "^3.1.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.11.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-babel-istanbul": "^1.4.0",
+    "gulp-eslint": "^3.0.1",
+    "gulp-inject-modules": "^1.0.0",
+    "gulp-mocha": "^2.2.0",
+    "mocha": "^2.5.3",
+    "mustache": "^2.2.1"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.4.9",
+    "request": "^2.74.0",
+    "request-promise": "^4.0.2"
+  }
+}

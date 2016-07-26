@@ -1,0 +1,9 @@
+.DS_Store
+dist/*
+node_modules/
+npm-debug.*
+*.swp
+coverage/
+apihandler.zip
+api.json
+src/config.js
